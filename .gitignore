@@ -1,0 +1,44 @@
+# IntelliJ
+*.iml
+*.iws
+modules.xml
+.idea/
+.idea_modules/
+out/
+dist/
+webapp/
+
+# Application
+*.log
+var/
+**/*-EMMA-invoices.txt
+
+# Generated files from XSD
+*.episode
+
+# Generated files from AWS config
+ops/aws/tst/
+
+# compressed files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# VM's
+hs_err_pid*
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Gradle
+.gradle/
+build/
+
+# OSX
+.DS_Store

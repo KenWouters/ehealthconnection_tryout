@@ -1,0 +1,29 @@
+group 'ehealth-connector'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url "http://repo.ehealth.fgov.be/artifactory/maven2-cache"
+    }
+    maven {
+        url "http://repo.ehealth.fgov.be/artifactory/maven2"
+    }
+}
+
+configurations.all {
+    exclude group: 'be.fgov.ehealth.connector', module: 'connector-technical-smartcardio'
+    exclude group: 'be.fedict.commons-eid', module: 'commons-eid-jca'
+    exclude group: 'be.fgov.ehealth.connector', module: 'connector-utilities-timestamping'
+}
+
+dependencies {
+//    compile 'be.fgov.ehealth.connector:connector-packaging-technical-core:3.15.1'
+    compile 'be.fgov.ehealth.connector:connector-packaging-persphysiotherapist:3.15.1'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
