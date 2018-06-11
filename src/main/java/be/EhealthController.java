@@ -20,6 +20,6 @@ public class EhealthController {
     @GetMapping("/try")
     public ResponseEntity<Object> tryConnect() throws TechnicalConnectorException {
         tester.tryConnect();
-        return new ResponseEntity<Object>(HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 }
