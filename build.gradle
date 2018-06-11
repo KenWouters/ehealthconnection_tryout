@@ -1,9 +1,21 @@
+plugins {
+    id "io.spring.dependency-management" version "1.0.4.RELEASE"
+}
+
 group 'ehealth-connector'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
+
+dependencyManagement {
+    dependencies {
+        imports {
+            mavenBom 'org.springframework.boot:spring-boot-starter-parent:2.0.1.RELEASE'
+        }
+    }
+}
 
 repositories {
     mavenCentral()
@@ -20,10 +32,14 @@ configurations.all {
     exclude group: 'be.fgov.ehealth.connector', module: 'connector-technical-smartcardio'
     exclude group: 'be.fedict.commons-eid', module: 'commons-eid-jca'
     exclude group: 'be.fgov.ehealth.connector', module: 'connector-utilities-timestamping'
+    exclude group: 'ch.qos.logback', module:'logback-classic'
 }
 
 dependencies {
-//    compile 'be.fgov.ehealth.connector:connector-packaging-technical-core:3.15.1'
-    compile 'be.fgov.ehealth.connector:connector-packaging-persphysiotherapist:3.15.1'
+    compile 'be.fgov.ehealth.connector:connector-technical-core:3.15.1'
+    compile 'org.slf4j:slf4j-api:1.7.25'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+//    compile 'be.fgov.ehealth.connector:connector-packaging-persphysiotherapist:3.15.1'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
