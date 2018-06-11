@@ -26,17 +26,22 @@ repositories {
     maven {
         url "http://repo.ehealth.fgov.be/artifactory/maven2"
     }
+
+    maven {
+        url "https://www.e-contract.be/maven2/"
+    }
 }
 
 configurations.all {
-    exclude group: 'be.fgov.ehealth.connector', module: 'connector-technical-smartcardio'
-    exclude group: 'be.fedict.commons-eid', module: 'commons-eid-jca'
+//    exclude group: 'be.fgov.ehealth.connector', module: 'connector-technical-smartcardio'
     exclude group: 'be.fgov.ehealth.connector', module: 'connector-utilities-timestamping'
     exclude group: 'ch.qos.logback', module:'logback-classic'
+    exclude group: 'com.sun.security', module:'pkcs11'
 }
 
 dependencies {
     compile 'be.fgov.ehealth.connector:connector-technical-core:3.15.1'
+    compile 'be.fedict.commons-eid:commons-eid-bom:0.8.0'
     compile 'org.slf4j:slf4j-api:1.7.25'
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-actuator'

@@ -1,5 +1,6 @@
 package be;
 
+import be.ehealth.technicalconnector.beid.BeIDCardAdaptor;
 import be.ehealth.technicalconnector.exception.TechnicalConnectorException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

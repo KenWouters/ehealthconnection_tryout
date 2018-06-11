@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class Tester {
 
     public void tryConnect() throws TechnicalConnectorException {
-        final String randomPassword = "faros is supertof bedrijf";
+        final String randomPassword = "maria!";
         ConfigFactory.setConfigLocation("classpath:ehealth_ken.properties");
         SessionManager sessionManager = Session.getInstance();
 
