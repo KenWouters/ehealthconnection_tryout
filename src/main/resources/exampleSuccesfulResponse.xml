@@ -1,0 +1,153 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <Response xmlns="urn:oasis:names:tc:SAML:1.0:protocol"
+                InResponseTo="request-0d407e27-b767-46b1-b1a5-cb8abdb894ee"
+                IssueInstant="2018-06-12T14:06:34.833Z"
+                MajorVersion="1"
+                MinorVersion="1"
+                Recipient="CN=&quot;SSIN=88053013968&quot;, OU=eHealth-platform Belgium, OU=KEN WOUTERS, OU=&quot;SSIN=88053013968&quot;, O=Federal Government, C=BE"
+                ResponseID="_92a186eb9c308cb0bc0ca2d9f4be2920">
+            <Status>
+                <StatusCode xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" Value="samlp:Success"/>
+            </Status>
+            <Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion"
+                    AssertionID="_2fc46983601a19ffa5daaecfc3a9f29c"
+                    IssueInstant="2018-06-12T14:06:34.826Z"
+                    Issuer="urn:be:fgov:ehealth:sts:1_0"
+                    MajorVersion="1"
+                    MinorVersion="1">
+                <Conditions NotBefore="2018-06-12T14:02:24.955Z" NotOnOrAfter="2018-06-13T14:07:24.955Z"/>
+                <AuthenticationStatement AuthenticationInstant="2018-06-12T14:06:34.826Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:X509-PKI">
+                    <Subject>
+                        <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName" NameQualifier="CN=QuoVadis No Reliance ICA G3, O=QuoVadis Limited, C=BM">
+                            CN="SSIN=88053013968", OU=eHealth-platform Belgium, OU=KEN WOUTERS, OU="SSIN=88053013968", O=Federal Government, C=BE
+                        </NameIdentifier>
+                        <SubjectConfirmation>
+                            <ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:holder-of-key</ConfirmationMethod>
+                            <SubjectConfirmationData>
+                                <saml:Assertion xmlns:ns4="urn:oasis:names:tc:SAML:1.0:protocol"
+                                        xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion"
+                                        AssertionID="assertion-0d407e27-b767-46b1-b1a5-cb8abdb894ee"
+                                        IssueInstant="2018-06-12T14:07:24.955Z"
+                                        Issuer="CN=&quot;SSIN=88053013968&quot;, OU=eHealth-platform Belgium, OU=KEN WOUTERS, OU=&quot;SSIN=88053013968&quot;, O=Federal Government, C=BE"
+                                        MajorVersion="1"
+                                        MinorVersion="1">
+                                    <saml:Conditions NotBefore="2018-06-12T14:07:24.955Z" NotOnOrAfter="2018-06-13T14:07:24.955Z"/>
+                                    <saml:AttributeStatement>
+                                        <saml:Subject>
+                                            <saml:NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName"
+                                                    NameQualifier="CN=QuoVadis No Reliance ICA G3, O=QuoVadis Limited, C=BM">CN="SSIN=88053013968", OU=eHealth-platform Belgium,
+                                                OU=KEN WOUTERS, OU="SSIN=88053013968", O=Federal Government, C=BE
+                                            </saml:NameIdentifier>
+                                        </saml:Subject>
+                                        <saml:Attribute AttributeName="urn:be:fgov:ehealth:1.0:certificateholder:person:ssin"
+                                                AttributeNamespace="urn:be:fgov:identification-namespace">
+                                            <saml:AttributeValue>88053013968</saml:AttributeValue>
+                                        </saml:Attribute>
+                                        <saml:Attribute AttributeName="urn:be:fgov:person:ssin" AttributeNamespace="urn:be:fgov:identification-namespace">
+                                            <saml:AttributeValue>88053013968</saml:AttributeValue>
+                                        </saml:Attribute>
+                                    </saml:AttributeStatement>
+                                </saml:Assertion>
+                            </SubjectConfirmationData>
+                            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                                <ds:X509Data>
+                                    <ds:X509Certificate>MIIFKDCCAxCgAwIBAgIUGKuycA9EInofpck/utv6sNYsawswDQYJKoZIhvcNAQELBQAwTjELMAkG
+                                        A1UEBhMCQk0xGTAXBgNVBAoTEFF1b1ZhZGlzIExpbWl0ZWQxJDAiBgNVBAMTG1F1b1ZhZGlzIE5v
+                                        IFJlbGlhbmNlIElDQSBHMzAeFw0xODA1MTcwODMxMzZaFw0xOTA1MTcwODQxMDBaMIGZMQswCQYD
+                                        VQQGEwJCRTEbMBkGA1UECgwSRmVkZXJhbCBHb3Zlcm5tZW50MRkwFwYDVQQLDBBTU0lOPTg4MDUz
+                                        MDEzOTY4MRQwEgYDVQQLDAtLRU4gV09VVEVSUzEhMB8GA1UECwwYZUhlYWx0aC1wbGF0Zm9ybSBC
+                                        ZWxnaXVtMRkwFwYDVQQDDBBTU0lOPTg4MDUzMDEzOTY4MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+                                        MIIBCgKCAQEArP/itYKvc0l2g/kAEuCdM7bkbmcsdXytuUBIJ7222FsPiZM+zXUJtSmUSWyYLVip
+                                        H2DsOfQ92+kRL1e262RXEbkV9h1Pwi+8S0EWsBkiPT8YUcwjyzPNIM4hcDEmxSpkBiUXXTGG+73c
+                                        qsCy7mteAA+G+Tjcve8qRlmYLscoC4zTjm0rXnOzhspd6Xsfeukl0Ctdr7X92kSaXy5jWwSBdkpE
+                                        qu6l68dwaLEGiTtIwB9zlOP3GT+aoSgqwnfbW8IoRO+PbS+G/UCyoW3B2kMuj+2VrQtHzXx2DIYG
+                                        JYceeg67HxFaz5sLbXj90CsaMt/EV4I8G196th+VBUqF04R8BwIDAQABo4GxMIGuMB8GA1UdIwQY
+                                        MBaAFHyxpygwF3lyemieahkP1m6hNcg+MD0GCCsGAQUFBwEBBDEwLzAtBggrBgEFBQcwAYYhaHR0
+                                        cDovL29jc3BkZXYucXVvdmFkaXNnbG9iYWwuY29tMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEF
+                                        BQcDBDAdBgNVHQ4EFgQUY3zm4jTkzkYRdyyQKMXlExQ02aAwDgYDVR0PAQH/BAQDAgXgMA0GCSqG
+                                        SIb3DQEBCwUAA4ICAQBreYh+oKC9FoKZg3hL3B8j8AczdGTk3uRlmDAcN1E5S/qVjVeACBY1SIAj
+                                        nJQAHtchchPKBII4U+yK6Tb1f+HZwFWHvIQSh64LRtu3WiLQZdjxQCw6LSfcdFfBIbFrYlVkOvNj
+                                        Qmrd7r3H3uEL2/E8GD2Ev9JREco8Q7x1Q/mvpz9zivYGtjniygezvjcctAFydDnrJvT3GPoVXeNU
+                                        deKwHCMfnHLxnSjFdcnZz0Zt6UbJD1FGHIXzV4QBJqX45XJPCAgk/YHYfTUgyi2bj8nh2G5held+
+                                        0yGic+NvyNFdl80Wrcuar6EMeBkv0XcOnmgGx+2nxJQSTLqU03ck2mXZJ4/EaTHjjN5W4Z9afN3X
+                                        20h+LPCY3SQXK63GuMCBHVV0HWbR3s7CaEiDf3E4wmIWjRA+88KxCFIYs3KZgiaJR/+ITqafto+h
+                                        C0ZsN60qcAq74DEoZJGG0AkK5vp5Hb3KFVXYWJPt6xiRkhNwH9DNM4sBI9zvzyQyqsD8LMqJ0MpK
+                                        Bj7sokejn7VvHezJMwp/jj0153dpeV2/Z/CNtDvSWSvmXyd7Mvix4h/r2Qn7+U6lfv3H9pkB/1eG
+                                        rJGrRxbsYTjjzBq4m9nbpDTAHAocf/sgwbe7GnP/HHbrNjL7g0TM53FDY2JYfEDVo+PqOvpTLTc7
+                                        GTNVIS1L2j3l6nAoww==
+                                    </ds:X509Certificate>
+                                </ds:X509Data>
+                            </ds:KeyInfo>
+                        </SubjectConfirmation>
+                    </Subject>
+                </AuthenticationStatement>
+                <AttributeStatement>
+                    <Subject>
+                        <NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName" NameQualifier="CN=QuoVadis No Reliance ICA G3, O=QuoVadis Limited, C=BM">
+                            CN="SSIN=88053013968", OU=eHealth-platform Belgium, OU=KEN WOUTERS, OU="SSIN=88053013968", O=Federal Government, C=BE
+                        </NameIdentifier>
+                    </Subject>
+                    <Attribute AttributeName="urn:be:fgov:ehealth:1.0:certificateholder:person:ssin" AttributeNamespace="urn:be:fgov:identification-namespace">
+                        <AttributeValue>88053013968</AttributeValue>
+                    </Attribute>
+                    <Attribute AttributeName="urn:be:fgov:person:ssin" AttributeNamespace="urn:be:fgov:identification-namespace">
+                        <AttributeValue>88053013968</AttributeValue>
+                    </Attribute>
+                    <Attribute AttributeName="urn:be:fgov:person:ssin:ehealth:1.0:nihii:trussmaker:nihii11" AttributeNamespace="urn:be:fgov:certified-namespace">
+                        <AttributeValue>62045554200</AttributeValue>
+                    </Attribute>
+                </AttributeStatement>
+                <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:SignedInfo>
+                        <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                        <ds:Reference URI="#_2fc46983601a19ffa5daaecfc3a9f29c">
+                            <ds:Transforms>
+                                <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                                <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                            </ds:Transforms>
+                            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                            <ds:DigestValue>MBp2XmHICQKfDy70sACjHpGOHBE=</ds:DigestValue>
+                        </ds:Reference>
+                    </ds:SignedInfo>
+                    <ds:SignatureValue>
+                        YsQP5VwQ9ZfzC/wic3QUMxkghqTKeRhd1Ow08XZtLhgTovSfgFzhXDCWRNw+JutAAk0h/Dy5nE25FfWtjiTulP/94Yk160BYebssHyzU5LSRdEnblq+aeFoNrNf6NTSPSzcVsQQC5UZF7FQiGrR6zeAvw94+OtuHVhrgfFxlJs+eoFwUm7wq35h+BeoqfZNJk+DY4fr9boGLkKK2JFiWHh6qO3pwiBjO6iWXevpN543BffbKXGBCTtJopGge7X4lkYiPfsjNN7fjaWcSiaqYRzmqs4DBYzk/Im/9N6gHeX0lTXgTs5p2siVnrFHAaFEEzrDqGiAb3qsXBYg24+tqlg==
+                    </ds:SignatureValue>
+                    <ds:KeyInfo>
+                        <ds:X509Data>
+                            <ds:X509Certificate>MIIF/jCCA+agAwIBAgIOAQAAAAABUNg3svB6+P4wDQYJKoZIhvcNAQELBQAwNjELMAkGA1UEBhMC
+                                QkUxFjAUBgNVBAMTDUdvdmVybm1lbnQgQ0ExDzANBgNVBAUTBjIwMTQwMjAeFw0xNTExMDUxNTIw
+                                MzhaFw0xOTAyMDUxNTIwMzhaMIGzMR8wHQYDVQQDExZDQkU9MDgwOTM5NDQyNywgSUFNQUNDMQsw
+                                CQYDVQQGEwJCRTEPMA0GA1UECxMGSUFNQUNDMRcwFQYDVQQLEw5DQkU9MDgwOTM5NDQyNzEZMBcG
+                                A1UECxMQRUhFQUxUSC1QTEFURk9STTEhMB8GA1UECxMYZUhlYWx0aC1wbGF0Zm9ybSBCZWxnaXVt
+                                MRswGQYDVQQKExJGZWRlcmFsIEdvdmVybm1lbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+                                AoIBAQCQeQy6A7iONBHLf+QFrooigdFHBCCUOf+lrfxpfJn8K7+aCt0NZyZsa9GO3RLSeWDRs0Gj
+                                Qnui3yLjWnHYJ5NHw729/Z/JcYBB75Vp+ZG7VrlRT8yvYMFRNSiWAJqvLLsz0JgpC7gyBEE8b5/d
+                                CWvXFBGWwn1QojfADBgz/cZ8oMVr84CAUZEs4tJwoaD9OcftcK2GoiM1ax3NVVeVA3LVMK/WsD0G
+                                2lmdRNhtU9I64K3iCGal+hm5yxaeqtMGIX9YJXMP2mtswrFO9L4V6GbapT/mbdpx5K7/lFwqFG0z
+                                WjLpV+Ru0JNr59msHiWbMlhMWGpPoFer/oKCrOK5TUufAgMBAAGjggGKMIIBhjAfBgNVHSMEGDAW
+                                gBSO6Dkuol6Mul/B7QIppc9Aw7mbujBwBggrBgEFBQcBAQRkMGIwNgYIKwYBBQUHMAKGKmh0dHA6
+                                Ly9jZXJ0cy5wa2kuYmVsZ2l1bS5iZS9iZWxnaXVtcnM0LmNydDAoBggrBgEFBQcwAYYcaHR0cDov
+                                L29jc3AucGtpLmJlbGdpdW0uYmUvMjAJBgNVHRMEAjAAMEQGA1UdIAQ9MDswOQYHYDgMAQEDBDAu
+                                MCwGCCsGAQUFBwIBFiBodHRwOi8vcmVwb3NpdG9yeS5wa2kuYmVsZ2l1bS5iZTA/BgNVHR8EODA2
+                                MDSgMqAwhi5odHRwOi8vY3JsLnBraS5iZWxnaXVtLmJlL2dvdmVybm1lbnQyMDE0MDIuY3JsMA4G
+                                A1UdDwEB/wQEAwIE8DARBglghkgBhvhCAQEEBAMCBaAwHQYDVR0OBBYEFF5IPR0ZXMypAhs/ThrI
+                                Y6G47M4zMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDANBgkqhkiG9w0BAQsFAAOCAgEA
+                                Se5X+pykLOJthPojVxjqfZvd6BvE/awI4k/27tAo9D2PyPmmYENCzF55n7dfFzubuqMB9+Moht1P
+                                0kAWpvKy01/HloJM5ARmxUEqP/pAPE+AUDdzkfVZHSodK4T+fv6YW1rtylY7T8UeBGDnBN7tKSAm
+                                ujpTd9Dsmue+JuafqpPFYJiaghI3I2wRNdpERS2XJytM3ol24d7qi5xrEuYfFYFSg+vJPynsboFk
+                                L2MG1zVK0kia07LXUrIQwaqTwmIZVcmxNKEGLR8ZUsI5JdwBcWinsCq04BBHDsftca3XzM1tN1Iy
+                                CvAt6srcv2vLYsvrWKGfYUkW8l0nDU0mUVkLeQ/cvjkW2QOIVXsV6Av09eKUTQgJXxFaw/J9Z5V3
+                                oDtjhfq5Ft89WCnKsM5gECiyKwg+Ou9Y9txsfOTvcWhlSNeiH1IVMO/e2QHbWRbCy+ZhJgZ81G53
+                                xtvrji8cXGKYucoyid8cMRHlMvyjOKeCzga494iOUF6bAkSd6bNuOvf4ry0w22hfac050FDKKW4S
+                                JhONnfBn7AbpF+c433743HoBWgSdbK2rhORCG1EUN/lkf28hwhXayZRiJoWdhr+lrCxGO3bv94GX
+                                w9s/PSV3i1TnpEnb3qu0g5PEFz40Y8e56ieIS9MXnZCsCOt72b4FNGWKnjrUvRJ9ptVtdUYpIdA=
+                            </ds:X509Certificate>
+                        </ds:X509Data>
+                    </ds:KeyInfo>
+                </ds:Signature>
+            </Assertion>
+        </Response>
+    </S:Body>
+</S:Envelope>
