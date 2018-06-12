@@ -1,0 +1,117 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <ds:Signature Id="SIG-97D59B19FBA521C91C152657597509120" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+               <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                  <ec:InclusiveNamespaces PrefixList="soapenv" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+               </ds:CanonicalizationMethod>
+               <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+               <ds:Reference URI="#id-3">
+                  <ds:Transforms>
+                     <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                        <ec:InclusiveNamespaces PrefixList="" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                     </ds:Transform>
+                  </ds:Transforms>
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                  <ds:DigestValue>HR7RMk0juEwzHAgEkEBUcCEn9iw=</ds:DigestValue>
+               </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>NfONbgVgpoLcaT92r6d24dnz8A3uE7pBZ0aEJ7ZOTAeF3eJ5fAkRLit/xmYitQuNwr6N0hgvAY4h
+JZw+U3qlBXr5h23fuzO2rOmPZkOGbi4wf8OiSazw57AccXKwHnZDwm9POIprdRK/7DnZMLcGywGc
+LwQEeknTXp4dULmQBoRpFiktUHPHQ2uMYg/dg24qjCzQZBmoUiiMpNMt1CyYu0ugtmrL07ByFzgH
+WrZx1wgh1ql5fIduZZX40QkvyVt7qraCY1t8mpI0H2mVrdHLi9GvVH7rqp/S0vSX7iZUrEMNKYaa
+3mSUB7ovRFr8VqItTTMx3dCw5Kg7WrWrNrA3DQ==</ds:SignatureValue>
+            <ds:KeyInfo Id="KI-97D59B19FBA521C91C152657597501118">
+               <wsse:SecurityTokenReference wsu:Id="STR-97D59B19FBA521C91C152657597501119">
+                  <wsse:KeyIdentifier EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3">MIID3DCCAsSgAwIBAgIQT/Cf7EW1NCqb1plkAUG5TzANBgkqhkiG9w0BAQsFADCBnzELMAkGA1UEBhMCQkUxGzAZBgNVBAoMEkZlZGVyYWwgR292ZXJubWVudDEZMBcGA1UECwwQU1NJTj02NzAxMjcyNjg0NTEaMBgGA1UECwwRS0FUUklFTiBWRVJIRVlERU4xITAfBgNVBAsMGGVIZWFsdGgtcGxhdGZvcm0gQmVsZ2l1bTEZMBcGA1UEAwwQU1NJTj02NzAxMjcyNjg0NTAeFw0xODA0MjQxNDQ3MDdaFw0xOTA0MjQxNDU3MDBaMIGfMQswCQYDVQQGEwJCRTEbMBkGA1UECgwSRmVkZXJhbCBHb3Zlcm5tZW50MRkwFwYDVQQLDBBTU0lOPTY3MDEyNzI2ODQ1MRowGAYDVQQLDBFLQVRSSUVOIFZFUkhFWURFTjEhMB8GA1UECwwYZUhlYWx0aC1wbGF0Zm9ybSBCZWxnaXVtMRkwFwYDVQQDDBBTU0lOPTY3MDEyNzI2ODQ1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA/O5SOXLF2QCerOcCxf9YnavVN7RgdfANuX2pQHAhYnFMfuJPi6zeFFag5t2IUTwYgNncMXgHVh3+HRgjhs7yTaH83bIFZkdanXTNAAyvB4TRRays3i5g9IjorJDKSrFDvyYKGu1y/KzHEAHOR3Fl0IoQh+c3jP4Sk71Gm6QmhP4R15CqPuSHU1Z6ba0thLKwj12y5uc2o5cMC7EbZlFc5nBmf0cp0pUcRaebS/94DDYwDS/O5KELWeEaPBHIdLnSdbZo3Abbz/h6uDMQf1tqMY+gULkgk6gVbU28adMvfxBx6PPx/Pz6pwF4C8diMVXINnbDJFN4pRb0LqDwpOn8FwIDAQABoxIwEDAOBgNVHQ8BAf8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAGimUWQ7qd6SaXJ4R7dpmXBRUupml6CjYfBtP6TUkfEOl4I/v+u2LRhmX6uaA6tttki/zWRU6IBkEepX9/GA3gXWbqmFLI2h2FgFaRbs/87d1IqegB5pRQxxLi7q23+o3TUXNRB3ZJT2kIgD3ChHnzqWyM2QPFU4P4t4z+M9E06VWrJejzLuASPBIxAkpppEtgX1OkmSyM7PXwkTSiflCKms4S4QPFIOtcOh5zZG2lUIWWNRmquROTa4C2fGcAXA6blhjvriA8OyD6Vctt8ea23WL16lo2Vf4kHPslUhTLhui/pDss2//eI30zVA7iJ2i8tzSpI3es2yxSAogW9buLc=</wsse:KeyIdentifier>
+               </wsse:SecurityTokenReference>
+            </ds:KeyInfo>
+         </ds:Signature>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body wsu:Id="id-3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <Request IssueInstant="2018-05-17T12:13:18.482Z" MajorVersion="1" MinorVersion="1" RequestID="_81d275d281c4e93a225a7e6d5901d46f" xmlns="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol"
+      >
+         <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+               <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+               <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+               <ds:Reference URI="#_81d275d281c4e93a225a7e6d5901d46f">
+                  <ds:Transforms>
+                     <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                     <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                        <ec:InclusiveNamespaces PrefixList="code ds kind rw saml samlp typens #default xsd xsi" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                     </ds:Transform>
+                  </ds:Transforms>
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                  <ds:DigestValue>HLGsMw/lacAd4HTP6c6EBaiseAw=</ds:DigestValue>
+               </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>fPak18vQupy6+GTg27wIHH1DJK0PSMGRniEJUwh53bE9wiFVzUQPGQcVEAhSNCHnajtKw4hzGWYe
+uNYURih9aNQ61ezFKEAVKAhiaw91xhrD2qkoCa8VAoeu+lRGgNHzVePnVrqWxR8b40zXq4AaDmyB
+zDhdRx40oFP8/h2UEN5GOk7P+a3pm8KMNRtnTE2CG1I8h4a5cgwI+1mExviCDjKSB1cbsDtCRlGg
+TA0Jw8SEm4ugciDK7SjdcYdWV1G0vdQI8eYnlbk+kTbI2OaeeK9Jw7JfOF0hh8V+EPPolHx4r3tR
+EhzD3WnPGwolXZvHD/rtCUS+/BZ8v/9xOyP4Sg==</ds:SignatureValue>
+            <ds:KeyInfo>
+               <ds:X509Data>
+                  <ds:X509Certificate>MIID3DCCAsSgAwIBAgIQT/Cf7EW1NCqb1plkAUG5TzANBgkqhkiG9w0BAQsFADCBnzELMAkGA1UEBhMCQkUxGzAZBgNVBAoMEkZlZGVyYWwgR292ZXJubWVudDEZMBcGA1UECwwQU1NJTj02NzAxMjcyNjg0NTEaMBgGA1UECwwRS0FUUklFTiBWRVJIRVlERU4xITAfBgNVBAsMGGVIZWFsdGgtcGxhdGZvcm0gQmVsZ2l1bTEZMBcGA1UEAwwQU1NJTj02NzAxMjcyNjg0NTAeFw0xODA0MjQxNDQ3MDdaFw0xOTA0MjQxNDU3MDBaMIGfMQswCQYDVQQGEwJCRTEbMBkGA1UECgwSRmVkZXJhbCBHb3Zlcm5tZW50MRkwFwYDVQQLDBBTU0lOPTY3MDEyNzI2ODQ1MRowGAYDVQQLDBFLQVRSSUVOIFZFUkhFWURFTjEhMB8GA1UECwwYZUhlYWx0aC1wbGF0Zm9ybSBCZWxnaXVtMRkwFwYDVQQDDBBTU0lOPTY3MDEyNzI2ODQ1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA/O5SOXLF2QCerOcCxf9YnavVN7RgdfANuX2pQHAhYnFMfuJPi6zeFFag5t2IUTwYgNncMXgHVh3+HRgjhs7yTaH83bIFZkdanXTNAAyvB4TRRays3i5g9IjorJDKSrFDvyYKGu1y/KzHEAHOR3Fl0IoQh+c3jP4Sk71Gm6QmhP4R15CqPuSHU1Z6ba0thLKwj12y5uc2o5cMC7EbZlFc5nBmf0cp0pUcRaebS/94DDYwDS/O5KELWeEaPBHIdLnSdbZo3Abbz/h6uDMQf1tqMY+gULkgk6gVbU28adMvfxBx6PPx/Pz6pwF4C8diMVXINnbDJFN4pRb0LqDwpOn8FwIDAQABoxIwEDAOBgNVHQ8BAf8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAGimUWQ7qd6SaXJ4R7dpmXBRUupml6CjYfBtP6TUkfEOl4I/v+u2LRhmX6uaA6tttki/zWRU6IBkEepX9/GA3gXWbqmFLI2h2FgFaRbs/87d1IqegB5pRQxxLi7q23+o3TUXNRB3ZJT2kIgD3ChHnzqWyM2QPFU4P4t4z+M9E06VWrJejzLuASPBIxAkpppEtgX1OkmSyM7PXwkTSiflCKms4S4QPFIOtcOh5zZG2lUIWWNRmquROTa4C2fGcAXA6blhjvriA8OyD6Vctt8ea23WL16lo2Vf4kHPslUhTLhui/pDss2//eI30zVA7iJ2i8tzSpI3es2yxSAogW9buLc=</ds:X509Certificate>
+               </ds:X509Data>
+            </ds:KeyInfo>
+         </ds:Signature>
+         <samlp:AttributeQuery>
+            <saml:Subject>
+               <saml:NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName" NameQualifier="OID.2.5.4.5=2011, CN=Government CT, C=BE">O=Federal Government, OU=eHealth-platform Belgium, OU=KATRIEN VERHEYDEN, OU="SSIN=67012726845", C=BE, CN="SSIN=67012726845"</saml:NameIdentifier>
+               <saml:SubjectConfirmation>
+                  <saml:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:holder-of-key</saml:ConfirmationMethod>
+                  <saml:SubjectConfirmationData>
+                      <saml:Assertion AssertionID="assertion-76c40c6d-e8fe-4a87-b693-45b387950f9d"
+
+                              IssueInstant="2018-05-17T11:57:30.030+02:00"
+                              Issuer="O=Federal Government, OU=eHealth-platform Belgium, OU=KATRIEN VERHEYDEN, OU=&quot;SSIN=67012726845&quot;, C=BE, CN=&quot;SSIN=67012726845&quot;"
+                              MajorVersion="1"
+                              MinorVersion="1">
+                        <saml:Conditions 
+                        NotBefore="2017-10-07T14:04:50.030+02:00" 
+                        NotOnOrAfter="2018-10-08T14:04:50.030+02:00"/>
+                        <saml:AttributeStatement>
+                           <saml:Subject>
+                              <saml:NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName" 
+                              NameQualifier="OID.2.5.4.5=2011, CN=Government CT, C=BE">O=Federal Government, OU=eHealth-platform Belgium, OU=KATRIEN VERHEYDEN, OU="SSIN=67012726845", C=BE, CN="SSIN=67012726845"</saml:NameIdentifier>
+                           </saml:Subject>
+                           <saml:Attribute AttributeName="urn:be:fgov:ehealth:1.0:certificateholder:person:ssin" AttributeNamespace="urn:be:fgov:identification-namespace">
+                              <saml:AttributeValue>67012726845</saml:AttributeValue>
+                           </saml:Attribute>
+                
+                                  
+  <saml:Attribute AttributeName="urn:be:fgov:ehealth:1.0:nihii:trussmaker:nihii-number11" AttributeNamespace="urn:be:fgov:identification-namespace">
+                              <saml:AttributeValue>62307157200</saml:AttributeValue>
+                           </saml:Attribute>
+
+                           <saml:Attribute AttributeName="urn:be:fgov:ehealth:1.0:mandator:person:ssin:nihii:trussmaker:nihii11" AttributeNamespace="urn:be:fgov:identification-namespace">
+                              <saml:AttributeValue>62307157200</saml:AttributeValue>
+                           </saml:Attribute>
+	                        <saml:Attribute AttributeName="urn:be:fgov:person:ssin:ehealth:1.0:nihii:trussmaker:nihii11" AttributeNamespace="urn:be:fgov:identification-namespace">
+                              <saml:AttributeValue>62307157200</saml:AttributeValue>
+                           </saml:Attribute>
+
+
+                           <saml:Attribute AttributeName="urn:be:fgov:person:ssin" AttributeNamespace="urn:be:fgov:identification-namespace">
+                              <saml:AttributeValue>67012726845</saml:AttributeValue>
+                           </saml:Attribute>
+                           
+                        </saml:AttributeStatement>
+                     </saml:Assertion>
+                  </saml:SubjectConfirmationData>
+                  <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                     <ds:X509Data>
+                        <ds:X509Certificate>MIID3DCCAsSgAwIBAgIQT/Cf7EW1NCqb1plkAUG5TzANBgkqhkiG9w0BAQsFADCBnzELMAkGA1UEBhMCQkUxGzAZBgNVBAoMEkZlZGVyYWwgR292ZXJubWVudDEZMBcGA1UECwwQU1NJTj02NzAxMjcyNjg0NTEaMBgGA1UECwwRS0FUUklFTiBWRVJIRVlERU4xITAfBgNVBAsMGGVIZWFsdGgtcGxhdGZvcm0gQmVsZ2l1bTEZMBcGA1UEAwwQU1NJTj02NzAxMjcyNjg0NTAeFw0xODA0MjQxNDQ3MDdaFw0xOTA0MjQxNDU3MDBaMIGfMQswCQYDVQQGEwJCRTEbMBkGA1UECgwSRmVkZXJhbCBHb3Zlcm5tZW50MRkwFwYDVQQLDBBTU0lOPTY3MDEyNzI2ODQ1MRowGAYDVQQLDBFLQVRSSUVOIFZFUkhFWURFTjEhMB8GA1UECwwYZUhlYWx0aC1wbGF0Zm9ybSBCZWxnaXVtMRkwFwYDVQQDDBBTU0lOPTY3MDEyNzI2ODQ1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA/O5SOXLF2QCerOcCxf9YnavVN7RgdfANuX2pQHAhYnFMfuJPi6zeFFag5t2IUTwYgNncMXgHVh3+HRgjhs7yTaH83bIFZkdanXTNAAyvB4TRRays3i5g9IjorJDKSrFDvyYKGu1y/KzHEAHOR3Fl0IoQh+c3jP4Sk71Gm6QmhP4R15CqPuSHU1Z6ba0thLKwj12y5uc2o5cMC7EbZlFc5nBmf0cp0pUcRaebS/94DDYwDS/O5KELWeEaPBHIdLnSdbZo3Abbz/h6uDMQf1tqMY+gULkgk6gVbU28adMvfxBx6PPx/Pz6pwF4C8diMVXINnbDJFN4pRb0LqDwpOn8FwIDAQABoxIwEDAOBgNVHQ8BAf8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAGimUWQ7qd6SaXJ4R7dpmXBRUupml6CjYfBtP6TUkfEOl4I/v+u2LRhmX6uaA6tttki/zWRU6IBkEepX9/GA3gXWbqmFLI2h2FgFaRbs/87d1IqegB5pRQxxLi7q23+o3TUXNRB3ZJT2kIgD3ChHnzqWyM2QPFU4P4t4z+M9E06VWrJejzLuASPBIxAkpppEtgX1OkmSyM7PXwkTSiflCKms4S4QPFIOtcOh5zZG2lUIWWNRmquROTa4C2fGcAXA6blhjvriA8OyD6Vctt8ea23WL16lo2Vf4kHPslUhTLhui/pDss2//eI30zVA7iJ2i8tzSpI3es2yxSAogW9buLc=</ds:X509Certificate>
+                     </ds:X509Data>
+                  </ds:KeyInfo>
+               </saml:SubjectConfirmation>
+            </saml:Subject>
+           
+         </samlp:AttributeQuery>
+      </Request>
+   </soapenv:Body>
+</soapenv:Envelope>

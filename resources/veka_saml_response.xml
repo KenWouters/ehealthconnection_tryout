@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Server</faultcode>
+         <faultstring>SOA-02001: Service is not available. Please contact service desk.</faultstring>
+         <detail>
+            <urn:SystemError Id="60c4103f-5ff7-4344-8581-3a7642539f28" xmlns:urn="urn:be:fgov:ehealth:errors:soa:v1">
+               <Origin>Server</Origin>
+               <Code>SOA-02001</Code>
+               <Message xml:lang="en">Service is not available. Please contact service desk.</Message>
+               <urn:Environment>Acceptation</urn:Environment>
+            </urn:SystemError>
+         </detail>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>
