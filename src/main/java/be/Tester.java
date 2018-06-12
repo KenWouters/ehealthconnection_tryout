@@ -16,10 +16,10 @@ public class Tester {
         SessionManager sessionManager = Session.getInstance();
 
         if (!sessionManager.hasValidSession()) {
-            sessionManager.createSession(randomPassword, randomPassword);
+            sessionManager.createFallbackSession(randomPassword, randomPassword, randomPassword);
         } else {
             sessionManager.unloadSession();
-            sessionManager.createSession(randomPassword, randomPassword);
+            sessionManager.createFallbackSession(randomPassword, randomPassword, randomPassword);
         }
     }
 }
