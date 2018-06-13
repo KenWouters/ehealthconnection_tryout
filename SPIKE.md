@@ -12,23 +12,23 @@ On [this page](https://www.ehealth.fgov.be/ehealthplatform/nl/service-ehealth-ce
 * We replaced the expired certificate with one of ours on the eID 
 * We followed [this PDF](https://www.ehealth.fgov.be/ehealthplatform/nl/data/file/view/9301938c60ff0e2ed8adab52b3ad2d6d6b1079cc?name=STS_HolderOfKey-Cookbook%20v1-2-13042018.pdf ) to compose our request in SOAP UI with the following result :
 
-The reequest we used: [resources/veka_saml_request.xml](docs/resources/veka_saml_request.xml)
+The request we used: [resources/veka_saml_request.xml](resources/veka_saml_request.xml)
 
 ##### The steps we did in SOAP-UI, visualized:
 ![](resources/AddKeyStore.png)
 
-![](docs/resources/CreateSignature.png)
+![](resources/CreateSignature.png)
 
-![](docs/resources/removedSecurityTag.png)
+![](resources/removedSecurityTag.png)
 
-![](docs/resources/addStoreToProject.png)
+![](resources/addStoreToProject.png)
 
-![](docs/resources/rightClick_applyWSConfig.png)
+![](resources/rightClick_applyWSConfig.png)
 
-![](docs/resources/Personal_trussmaker_attributes.png)
+![](resources/Personal_trussmaker_attributes.png)
 
 ##### The response we keep getting:
-![](docs/resources/response.png)
+![](resources/response.png)
 
 ## Technical connectors
 * Tried to include dependencies, appears we receive no access exception

@@ -39,3 +39,8 @@ The errors we were getting were really unclear in which file or which configurat
 
 Then we got a security exception: be.ehealth.technicalconnector.exception.TechnicalConnectorException: An error occurred while instantiating the webservice security handler: unable to insert security header
 
+Then we connected to a conference call and were able to resolve the errors by using a FallbackConnection.
+
+And eventually got stuck again on an SoapFaultException that the request was invalid or malformed. But we were able to send a soap request.
+
+During the conf call the accepting server's serverlog was investigated to find out what happened. 
