@@ -2,7 +2,27 @@
 
 This logbook serves to document the adventure of trying to connect to eHealth. More specifically _MyVSBNet_.
 
+## Log
+
+### 12/06/2018 - Working flow getting a SAMLToken
+Today we managed to actually retrieve a SAMLToken Response. We haven't yet tried calling a follow up webservice call, e.g. `determineInsurability`.
+
+We documented everything in the [HOWTO](HOWTO.md), but here's the gist of what we did today.
+
+We connected to a conference call and were told to use `SessionManager.createFallbackSession(pw,pw,pw)` instead of `SessionManager.createSession(pw,pw)` to create a session, this resolved our problems.
+
+We also had to change the default properties for the keystore configurations to the location in our project.
+
+And eventually got stuck again on a SoapFaultException saying the request was invalid or malformed. But we **were** able to send a soap request.
+
+During the conf call, the accepting server's serverlog was investigated to find out what happened. 
+It appears the endpoint url was deprecated, we were still using an old URL, which we got from the `connector-packaging-persphysiotherapist` zip file. 
+The package maintainers were going to correct this.
+
+The last step was to exclude some properties in the example property file, who were specific to the persphysiotherapist connector, and are meaningless to MyVSBNet.
+
 ## History
+
 ### Trying to use SoapUI to get a SAMLToken
 We documented everything concerning using SoapUI to get a SAMLToken [over here](SPIKE.md).
 
@@ -38,22 +58,3 @@ We got `rejects tag type 99` in an error, this we fixed by first configuring the
 The errors we were getting were really unclear in which file or which configuration was erroneous.
 
 Then we got a security exception: be.ehealth.technicalconnector.exception.TechnicalConnectorException: An error occurred while instantiating the webservice security handler: unable to insert security header 
-
-## Log
-
-### 12/06/2018 - Working flow getting a SAMLToken
-Today we managed to actually retrieve a SAMLToken Response. We haven't yet tried calling a follow up webservice call, e.g. `determineInsurability`.
-
-We documented everything in the [HOWTO](HOWTO.md), but here's the gist of what we did today.
-
-We connected to a conference call and were able to resolve the errors by using a `FallbackConnection` to create a session.
-
-We also had to change the default properties for the keystore configurations to the location in our project.
-
-And eventually got stuck again on a SoapFaultException saying the request was invalid or malformed. But we **were** able to send a soap request.
-
-During the conf call the accepting server's serverlog was investigated to find out what happened. 
-It appears the endpoint url was deprecated, we were still using an old URL, which we got from the `connector-packaging-persphysiotherapist` zip file. 
-Smals were going to correct this.
-
-The last step was to exclude some properties in the example property file, who were specific to the persphysiotherapist connector, and are meaningless to MyVSBNet.
