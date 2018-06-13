@@ -9,7 +9,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "be")
-@EntityScan(basePackages = "be.vsb.emma")
 public class EhealthApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(final SpringApplicationBuilder applicationBuilder) {
